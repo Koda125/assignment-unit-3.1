@@ -46,6 +46,8 @@ console.log('The second animal is: ', secondAnimal);
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
 //      you have proof that it works!)
+let lastAnimal = animalArray[3];
+console.log('The last animal is: ', lastAnimal);
 
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
@@ -64,7 +66,9 @@ console.log('Added an animal to end,', animalArray);
 //      a dessert that you love.
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
-
+let dessert = 'Lemon Drop Cookies';
+favoriteFoods.push(dessert);
+console.log('Added a dessert to the end', favoriteFoods);
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
@@ -74,12 +78,20 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
-
+let entree = 'Kimchi Ramen'
+favoriteFoods.unshift(entree)
+console.log('Added an entree to the beginning', favoriteFoods);
 
 // Example: Remove the last animal by using the Array.pop method.
 let removedAnimal = animalArray.pop();
 console.log('Removed the last animal', removedAnimal);
 console.log('The animals are now', animalArray);
+
+let newFood = 'Ravioli';
+favoriteFoods.push(newFood);
+console.log('Forgot a favorite food ' ,favoriteFoods);
+favoriteFoods.pop()
+console.log('On second thought, that is not my favorite food', favoriteFoods);
 
 // NOTE: Use the `colors` array for 4.c and 4.d.
 let colors = ['orange', 'yellow', 'green', 'teal'];
